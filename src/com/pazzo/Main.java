@@ -6,20 +6,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
 
-        Scanner scanner = new Scanner(System.in);
+        Sphere sphere = new Sphere(6);
 
-        Person patrick = new Person("Patrick","MUKUNZI",new GregorianCalendar(1997,1,25));
-
-
-        System.out.println();
-
-        System.out.println(
-                "Hello I'm "+patrick.fullName() +
-                        ". and Iam "+
-                        patrick.age(new GregorianCalendar()) +
-                        " Years old!");
+        System.out.println("Diameter of this Sphere is:\t" + sphere.diameter());
+        System.out.println("Circumference of this Sphere is:\t" + sphere.circumference());
+        System.out.println("Surface Area of this Sphere is:\t" + sphere.surfaceArea());
+        System.out.println("Volume of this Sphere is:\t" + sphere.volume());
 
     }
 }
